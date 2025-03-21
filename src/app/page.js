@@ -6,6 +6,8 @@ import Video from "@/components/ui/Video";
 
 
 export default function Home() {
+  const handleSubmit = (e) => {
+  };
   return (
     <div className={`${styles.page} `}>
       <section className={styles.landing}>
@@ -38,14 +40,14 @@ export default function Home() {
       <section className={styles.aboutSection}>
         <div className={styles.aboutContainer}>
           <div className={styles.aboutCarousel}>
-            <Image src="/about1.jpg" alt="About" fill={true} />
+            {/* <Image src="/about1.jpg" alt="About" fill={true} />
             <Image src="/about2.jpg" alt="About" fill={true} />
-            <Image src="/about3.jpg" alt="About" fill={true} />
+            <Image src="/about3.jpg" alt="About" fill={true} /> */}
           </div>
           <div className={styles.aboutTextContainer}>
             <div className={styles.aboutText}>
               <p>
-              Bienvenue à la Villa des K’ribean, une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d'hébergement inoubliable.
+              Bienvenue à la Villa des K'ribean, une retraite d'exception au cœur d'un environnement paisible. Nos deux chambres, la salle de bain moderne et le jardin vous garantissent tout le confort nécessaire pour un séjour mémorable. Notre villa allie avec finesse élégance et praticité, offrant un espace bien aménagé où chaque détail est conçu pour votre bien-être. Venez explorer notre havre de paix, où le confort contemporain et la chaleur humaine se combinent pour offrir une expérience d'hébergement inoubliable.
               </p>
             </div>
             <div className={styles.cardContainer}>
@@ -179,6 +181,90 @@ export default function Home() {
           
         </div>
 
+      </section>
+      <section className={styles.decouverteSection}> 
+        <div className={styles.decouverteContainer}>
+          <div className={styles.decouverteTitle}>
+            <h2>DÉTENTE</h2>
+          </div>
+          <div className={styles.decouverteContent}>
+            <div className={styles.decouverteImage}>
+                <Image src="/beach.jpg" alt="About" fill={true} />
+            </div>
+            <div className={styles.decouverteText}>
+              <p>
+              LA POINTE DES CHATEAUX
+              <br />
+              DISTANCE : 25KM
+              <br />
+              Si vous voulez admirer un lever de soleil, c'est l'endroit idéal. 
+              <br />
+              Attention, le soleil se lève très tôt ici !
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.aventureSection}>
+          <div className={styles.aventureTitle}>
+            <h2>AVENTURE</h2>
+          </div>
+          <div className={styles.aventureContent}>
+            <div className={styles.aventureImage}>
+              <Image src="/aventure.jpg" alt="About" fill={true} />
+            </div>
+            <div className={styles.aventureText}>
+              <p>
+                LA POINTE DES CHATEAUX
+                <br />
+                DISTANCE : 25KM
+                <br />
+                Si vous voulez admirer un lever de soleil, c'est l'endroit idéal. 
+                <br />
+                Attention, le soleil se lève très tôt ici !
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.decouverteContainer}>
+          <div className={styles.decouverteTitle}>
+            <h2>DÉCOUVERTE</h2>
+          </div>
+          <div className={styles.decouverteContent}>
+            <div className={styles.decouverteImage}>
+                <Image src="/decouverte.jpg" alt="About" fill={true} />
+            </div>
+            <div className={styles.decouverteText}>
+              <p>
+              LA POINTE DES CHATEAUX
+              <br />
+              DISTANCE : 25KM
+              <br />
+              Si vous voulez admirer un l ever de soleil, c'est l'endroit idéal. 
+              <br />
+              Attention, le soleil se lève très tôt ici !
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section className={styles.contactSection} id="contact">
+        <div className={styles.contactContainer}>
+          <h2>CONTACTEZ-NOUS</h2>
+          <p>
+            Nous sommes à votre écoute pour toute question ou demande. Contactez-nous par mail à <a href="mailto:contact@villedeskribean.com">contact@villedeskribean.com</a>
+          </p>
+
+          {/* <div className={styles.contactForm}>
+            <form>
+              <input type="text" placeholder="Nom" />
+              <input type="email" placeholder="Email" />
+              <textarea placeholder="Message"  />
+              <button type="submit" onClick={handleSubmit}>Envoyer</button>
+            </form>
+          </div>
+          */}
+        </div>
       </section>
     </div>
   );

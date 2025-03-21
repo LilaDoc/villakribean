@@ -233,10 +233,10 @@
 .locationSection {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
   margin-top: 2rem;
 }
 
@@ -246,11 +246,188 @@
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: red;
+  overflow: hidden;
 }
 
 .locationContainer img {
   object-fit: cover;
-
+  object-position: center 20%;
+  
 }
 
+.decouverteSection {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 170vh;
+  background-color: rgba(209, 187, 168, 1);
+  position: relative;
+  gap: 5rem;
+}
+
+.decouverteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+
+.decouverteTitle {
+  position: relative;
+  top: 10rem;
+  left: 0;
+  margin-left: 15rem;
+  top:35%;
+  z-index: 3;
+}
+
+.decouverteTitle h2 {
+  font-size: 112px;
+  font-weight: 400;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.decouverteContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.decouverteImage {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-left: 10rem;
+}
+
+.decouverteImage img {
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.decouverteText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  height: 50%;
+  margin-right: 10rem;
+  /* font-size: 20px; */
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-align: right;
+}
+
+.aventureSection {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+
+.aventureTitle {
+  position: relative;
+  top: 35%;
+  margin-right: 15rem;
+  z-index: 3;
+
+}
+.aventureTitle h2 {
+  font-size: 112px;
+  font-weight: 400;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.aventureContent {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 10rem;
+  padding-right: 10rem;
+} 
+
+.aventureImage {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-right: 10rem;
+}
+
+.aventureImage img {
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.aventureText {
+  text-align: left;
+  width: 50%;
+  /* font-size: 18px; */
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin-left: 10rem;
+  
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100vw;
+  height: 50vh;
+  background-color:rgba(209, 187, 168, 0.47);
+  position: relative;
+  gap: 5rem;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  padding-left: 10rem;
+  padding-top: 5rem;
+}
+
+.contactContainer h2 {
+  font-size: 112px;
+  font-weight: 400;
+
+  text-align: left;
+}
+.contactContainer p {
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.contactContainer a {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
